@@ -73,13 +73,13 @@ if __name__ == "__main__":
     model = get_model(0)
     load_pretrain = False
     learning_rate = 0.001
-    num_epochs = 30
-    batch_size = 16
-    patience = 5
+    num_epochs = 40
+    batch_size = 8
+    patience = 15
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), learning_rate)
     train_root_dir = "./test_dataset/train/"
-    val_root_dir = "./test_dataset/test/"
+    val_root_dir = "./test_dataset/val/"
     out_model = "./trained_model/siamese_unet.pth"
     pretrained_model = "./trained_model/siamese_unet.pth"
     checkpoint_dir = "./checkpoints"

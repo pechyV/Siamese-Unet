@@ -12,7 +12,7 @@ import logging
 # Nastavení logování
 setup_logging()
 
-def evaluate(root_dir="./test_dataset/eval/"):
+def evaluate(root_dir="./test_dataset/test/"):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Načtení modelu

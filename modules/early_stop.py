@@ -1,5 +1,5 @@
 class EarlyStopping:
-    def __init__(self, patience, min_delta=0):
+    def __init__(self, patience, min_delta=0.001):
         self.patience = patience  # Počet epoch bez zlepšení, po kterých trénování zastavíme
         self.min_delta = min_delta  # Minimální změna v ztrátě, která bude považována za zlepšení
         self.best_loss = float('inf')  # Nejlepší dosažená validační ztráta
